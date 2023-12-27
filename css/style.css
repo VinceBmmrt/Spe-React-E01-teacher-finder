@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /*
+    Variables CSS
+    syntaxe : `--nom-de-ma-variable`
+    usage : `color: var(--nom-de-ma-variable);`
+  */
+  --color: #222;
+  --color-bg: #011020;
+  --color-bg-content: #fff;
+  --color-list-item : #0052a9;
+  --color-list-tag: #386fd8;
+  --color-select : #eee;
+  --color-border: #ccc;
+
+  --font-sans: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color);
+  font-family: var(--font-sans);
+}
+
+.container {
+  background-color: var(--color-bg-content);
+  margin: 0 auto;
+  max-width: 40rem;
+  min-height: 100vh;
+  padding: 2rem;
+  width: 90%;
+}
+
+.form__select {
+  background-color: var(--color-select);
+  border: 1px solid var(--color-border);
+  font-size: 1.3125rem;
+  padding: 1rem;
+  width: 50%;
+}
+
+.counter {
+  border-bottom: 1px solid var(--color-border);
+  font-size: 2.5rem;
+  margin: 2rem 0;
+  padding-bottom: 0.5rem;
+}
+
+.list {
+  padding: 0;
+}
+
+.list__item {
+  background-color: var(--color-list-item);
+  border-radius: 4px;
+  color: var(--color-bg-content);
+  margin: 0.25rem 0;
+  padding: 1rem;
+}
+
+.list__item-tag {
+  background-color: var(--color-list-tag);
+  border-radius: 4px;
+  font-size: 0.75em;
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
